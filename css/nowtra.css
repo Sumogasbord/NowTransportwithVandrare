@@ -1,0 +1,100 @@
+body {
+  font-family: 'azo-sans-web', 'zen-kaku-gothic-new', sans-serif;
+  background: radial-gradient(circle at 25% 5%, rgba(26, 51, 128, 1), rgba(62, 62, 62, 1));
+}
+
+div {
+  margin: 1.25em 0;
+  padding: 1em 1.5em;
+}
+
+label {
+  color: #fcfcfc;
+  font-size: .75em;
+}
+
+input, select, textarea, button {
+  font-family: 'azo-sans-web', 'zen-kaku-gothic-new', sans-serif;
+  font-size: 1.5em;
+  border: none;
+  padding: .25em .5em;
+}
+
+input, select, textarea {
+  color: #fcfcfc;
+  font-size: 1.5em;
+  background: rgba(62, 62, 62, .5);
+  border-bottom: .1em solid #fcfcfc;
+  margin: .25em .5em;
+}
+
+input, select {
+  width: auto;
+  min-width: 50%;
+}
+
+textarea {
+  width: 80%;
+  height: 5em;
+}
+
+button {
+  width: auto;
+  border: none;
+  border-radius: .25em;
+  margin: 0 .25em;
+}
+
+
+h1{
+  color: #fcfcfc;
+  font-size: 2.5em;
+  text-shadow: 0 0 .5em black;
+  letter-spacing: .05em;
+}
+
+h2{
+  font-size: 1.25em;
+  font-style: normal;
+}
+
+p {
+  font-size: .75em;
+}
+
+.contents_area {
+  height: auto;
+  width: 50%;
+  min-width: 750px;
+  margin: 2.5em auto;
+  padding: 2.5em;
+}
+
+.input_area {
+  color: #fcfcfc;
+  background: #1f1f1f;
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(252, 252, 252, .15);
+}
+
+.output_area {
+  color: #1f1f1f;
+  background: #fcfcfc;
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(252, 252, 252, .15);
+}
+
+.output {
+  color: #1f1f1f;
+}
+
+.toot {
+  background: #3366ff;
+  color: #fcfcfc;
+  font-weight: bold;
+}
+
+.reset {
+  background: #e53333;
+  color: #fcfcfc;
+}

@@ -1,3 +1,4 @@
+
 function buttonClick() {
  var mstdnsvr = document.getElementById('mstdn_url');
  var dd = document.getElementById('date');
@@ -15,6 +16,9 @@ function buttonClick() {
  var hash2 = document.getElementById('hash2');
 
  var gene = mstdnsvr.value + "/share?text=" + dd.value + "%0a" + trnsp.value + "%20" + brnd.value + "%0a" + nbrg.value + "%20" + ln.value + "%0a" + ids.value + "%20" + "/" + "%20" + fr.value + "行" + "%0a" + gton.value + "%20" + "→" + "%20" + gtof.value + "%0a" + cmt.value ;
+
+ let text = document.getElementById('output').innerText;
+ document.getElementById('output').innerText = gene;
 
  const url = gene;
  window.open(url, '_blank')

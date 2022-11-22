@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <script src="js/form.js"></script>
+    <link href="css/nowtra.css" rel="stylesheet" />
+    <meta name="viwepoint" content="width=device-width,initial-scale=1.0,minumum-scale=1.0">
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'rdp2pzm',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <title>#NowTransportShare - β</title>
+  </head>
+  <body>
+    <div class="contents_area">
+      <h1>#NowTransportShare - β</h1>
+      <form id="post" class="" action="index.html" method="post">
+
+        <div class="input_area">
+          <h2>投稿するサーバーのURLを入力してください。</h2>
+            <label>URL
+              <input type="url" name="MstdnServerName" id="mstdn_url" value="https://vandrare.page">
+            </label>
+        </div>
+
+        <div class="input_area">
+          <h2>出発日を入力してください。</h2>
+            <label>出発日時
+              <input type="date" id="date">
+            </label>
+        </div>
+
+        <div class="input_area">
+          <h2>利用する交通機関を選択してください。</h2>
+            <label>分類
+              <select id="transport">
+                <option value=""></option>
+                <option value="&#x1f683;">鉄道</option>
+                <option value="&#x1f68c;">バス</option>
+                <option value="&#x2708;">飛行機</option>
+                <option value="&#x26f4;">フェリー・渡船</option>
+              </select>
+            </label>
+        </div>
+
+        <div class="input_area">
+          <h2>運行会社・ブランド名を入力してください。</h2>
+          <label>運行会社・ブランド
+            <input type="text" id="brand">
+          </label>
+        </div>
+
+        <div class="input_area">
+          <h2>路線名を入力してください。(※ナンバリングは任意)</h2>
+          <label>路線名
+            <input type="text" id="line">
+          </label>
+
+          <br/>
+
+          <label>ナンバリング(vandrare.pageのみ対応)
+            <select id="numbering">
+              <option value="">なし</option>
+              <option value=":R_JRK_Kagoshima_A:">JR九州・鹿児島本線(門司港〜吉塚)</option>
+              <option value=":R_JRK_Kagoshima_B:">JR九州・鹿児島本線(竹下〜荒尾)</option>
+              <option value=":R_JRK_Fukuhoku:">JR九州・福北ゆたか線</option>
+              <option value=":R_JRK_Kashii:">JR九州・香椎線</option>
+              <option value=":R_JRK_Wakamatsu:">JR九州・若松線</option>
+              <option value=":R_JRK_Nippo:">JR九州・日豊本線(小倉〜行橋)</option>
+              <option value=":R_JRK_Haruda:">JR九州・原田線</option>
+              <option value=":R_JRK_Nagasaki:">JR九州・長崎本線(鳥栖〜佐賀)</option>
+              <option value=":R_JRK_Hitahiko:">JR九州・日田彦山線</option>
+              <option value=":R_JRK_Gotoji:">JR九州・後藤寺線</option>
+              <option value=":R_JRK_Chikuhi:">JR九州・筑肥線(下山門〜西唐津)</option>
+              <option value=":R_NNR_Tenmuta:">西鉄・天神大牟田線</option>
+              <option value=":R_NNR_Dazaifu:">西鉄・太宰府線</option>
+              <option value=":R_NNR_Amagi:">西鉄・甘木線</option>
+              <option value=":R_NNR_Kaizuka:">西鉄・貝塚線</option>
+              <option value=":R_Fcs_Kuko:">福岡市地下鉄・空港線</option>
+              <option value=":R_Fcs_Hakozaki:">福岡市地下鉄・箱崎線</option>
+              <option value=":R_Fcs_Nanakuma:">福岡市地下鉄・七隈線</option>
+              <option value=":R_CER_Chikutetsu:">筑豊電気鉄道線</option>
+              <option value=":R_KER_Kumaden:">熊本電鉄線</option>
+              <option value=":R_HOR_HSOR:">平成筑豊鉄道線</option>
+              <option value=":R_HCR_Heichiku:">肥薩おれんじ鉄道線</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="input_area">
+          <h2>利用する便の名前・番号と行き先を入力してください。</h2>
+            <label>種別・便名
+              <input type="text" id="ids">
+            </label>
+
+            <br/>
+
+            <label>行先
+              <input type="text" id="for">
+            </label>
+        </div>
+
+        <div class="input_area">
+          <h2>乗車する区間を入力してください。</h2>
+            <label>乗車地
+              <input type="text" id="geton">
+            </label>
+
+            <br/>
+
+            <label>目的地
+              <input type="text" id="getoff">
+            </label>
+        </div>
+
+        <div class="input_area">
+          <h2>乗車する車両名・機種などを入力してください。</h2>
+            <label>使用車両・機材
+              <input type="text" id="vehicle">
+            </label>
+        </div>
+
+        <div class="input_area">
+          <h2>コメントがあればを入力してください。</h2>
+            <label>コメント
+              <textarea id="comment" rows="3"></textarea>
+            </label>
+        </div>
+
+        <div class="output_area">
+          <h2>投稿内容がここに表示されます。</h2>
+          <p id="output">（（（いつかはここに出るようがんばります。）））</p>
+        </div>
+
+        <button type="button" class="toot" onclick="buttonClick();">投稿する</button>
+        <button type="reset" class="reset">リセットする</button>
+      </form>
+    </div>
+  </body>
+</html>
