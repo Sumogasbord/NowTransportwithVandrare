@@ -38,9 +38,6 @@ function buttonClick() {
 
  var gene = mstdnsvr.value + "/share?text=" + dd.value + "%0a" + trnsp.value + "%20" + brnd.value + "%0a" + nbrg.value + "%20" + ln.value + "%0a" + ids.value + "%20" + "/" + "%20" + fr.value + "行" + "%0a" + gton.value + "%20" + "→" + "%20" + gtof.value + "%0a" + vhcl.value + "%0a" + cmt.value + "%0a" + "%23" + hs1.value + "%20" + "%23" + hs2.value;
 
- let text = document.getElementById('output').innerText;
- document.getElementById('output').innerText = gene;
-
  const url = gene;
  window.open(url, '_blank')
 }
