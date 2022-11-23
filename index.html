@@ -20,7 +20,7 @@
   <body>
     <div class="contents_area">
       <h1>#NowTransportShare - β</h1>
-      <form id="post" class="" action="index.html" method="post">
+      <form id="post" class="" action="index.html" method="post" onkeyup="test()">
 
         <div class="input_area">
           <h2>投稿するサーバーのURLを入力してください。</h2>
@@ -162,10 +162,11 @@
 
         <div class="output_area">
           <h2>投稿内容がここに表示されます。</h2>
-          <p id="output">（（（いつかはここに出るようがんばります。）））</p>
+          <p>※ナンバリングは絵文字コードで表示されます。</p>
+          <p id="output"></p>
         </div>
 
-        <button type="button" class="toot" onclick="buttonClick();">投稿する</button>
+        <button type="button" class="toot" onclick="buttonClick();">投稿！</button>
         <button type="reset" class="reset">リセットする</button>
       </form>
     </div>

@@ -1,3 +1,25 @@
+function test() {
+  var mstdnsvr = document.getElementById('mstdn_url');
+  var dd = document.getElementById('date1');
+  var trnsp = document.getElementById('transport');
+  var brnd = document.getElementById('brand');
+  var nbrg = document.getElementById('numbering')
+  var ln = document.getElementById('line');
+  var ids = document.getElementById('ids');
+  var fr = document.getElementById('for');
+  var gton = document.getElementById('geton');
+  var gtof = document.getElementById('getoff');
+  var vhcl = document.getElementById('vehicle');
+  var cmt = document.getElementById('comment');
+  var hs1 = document.getElementById('hash1');
+  var hs2 = document.getElementById('hash2');
+
+  var gene = dd.value + "\n" + trnsp.value + " " + brnd.value + "\n" + nbrg.value + " " + ln.value + "\n" + ids.value + " " + "/" + " " + fr.value + "行" + "\n" + gton.value + " " + "→" + " " + gtof.value + "\n" + vhcl.value + "\n" + cmt.value + "\n" + "#" + hs1.value + " " + "#" + hs2.value;
+
+  let text = document.getElementById('output').innerText;
+  document.getElementById('output').innerText = gene;
+}
+
 function buttonClick() {
  var mstdnsvr = document.getElementById('mstdn_url');
  var dd = document.getElementById('date1');
