@@ -1,6 +1,7 @@
 body {
+  min-height: 100vh;
   font-family: 'azo-sans-web', 'zen-kaku-gothic-new', sans-serif;
-  background: radial-gradient(circle at 25% 5%, rgba(26, 51, 128, 1), rgba(62, 62, 62, 1));
+  background: center / cover no-repeat linear-gradient(150deg, rgba(51, 102, 255, 1), rgba(86, 58, 204, 1));
 }
 
 div {
@@ -40,16 +41,16 @@ textarea {
 
 button {
   width: auto;
-  border: none;
   border-radius: .25em;
   margin: 0 .25em;
+  box-shadow: 0 0 .25em rgba(252, 252, 252, .25);
 }
 
 
 h1{
   color: #fcfcfc;
   font-size: 2.5em;
-  text-shadow: 0 0 .5em black;
+  text-shadow: 0 0 .25em black;
   letter-spacing: .05em;
 }
 
@@ -60,6 +61,11 @@ h2{
 
 p {
   font-size: .75em;
+}
+
+a {
+  text-decoration: none;
+  color: #1f1f1f;
 }
 
 .contents_area {
@@ -74,14 +80,31 @@ p {
   color: #fcfcfc;
   background: #1f1f1f;
   border-radius: 1em;
-  box-shadow: 0 0 1em rgba(252, 252, 252, .15);
+  box-shadow: 0 0 .75em rgba(252, 252, 252, .25);
 }
 
 .output_area {
   color: #1f1f1f;
   background: #fcfcfc;
   border-radius: 1em;
-  box-shadow: 0 0 1em rgba(252, 252, 252, .15);
+  box-shadow: 0 0 .75em rgba(252, 252, 252, .25);
+}
+
+.menu_area {
+  color: #1f1f1f;
+  background: #fcfcfc;
+  border-radius: 1em;
+  box-shadow: 0 0 .75em rgba(252, 252, 252, .25);
+}
+
+.choice {
+  color: #fcfcfc;
+  background: #1f1f1f;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 1em;
+  box-shadow: 0 0 .75em rgba(252, 252, 252, .25);
 }
 
 .output {
@@ -92,9 +115,11 @@ p {
   background: #3366ff;
   color: #fcfcfc;
   font-weight: bold;
+  border: 1px solid rgba(38,77,191,.5);
 }
 
 .reset {
   background: #e53333;
   color: #fcfcfc;
+  border: 1px solid rgba(172,38,38,.5);
 }
