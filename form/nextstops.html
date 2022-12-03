@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <script src="../js/form_ride.js"></script>
+    <script src="../js/form_nextstops.js"></script>
     <link href="../css/nowtra.css" rel="stylesheet" />
     <meta name="viwepoint" content="width=device-width,initial-scale=1.0,minumum-scale=1.0">
     <script>
@@ -30,13 +30,6 @@
         </div>
 
         <div class="input_area">
-          <h2>出発日を入力してください。</h2>
-            <label>出発日時
-              <input type="date" id="date">
-            </label>
-        </div>
-
-        <div class="input_area">
           <h2>利用する交通機関を選択してください。</h2>
             <label>分類
               <select id="transport">
@@ -47,13 +40,6 @@
                 <option value="&#x1f6f3;">フェリー・渡船</option>
               </select>
             </label>
-        </div>
-
-        <div class="input_area">
-          <h2>運行会社・ブランド名を入力してください。</h2>
-          <label>運行会社・ブランド
-            <input type="text" id="brand">
-          </label>
         </div>
 
         <div class="input_area">
@@ -174,6 +160,13 @@
         </div>
 
         <div class="input_area">
+          <h2>次の停車駅を入力してください。</h2>
+            <label>次は
+              <input type="text" id="next">
+            </label>
+        </div>
+
+        <div class="input_area">
           <h2>乗車する区間を入力してください。</h2>
             <label>乗車地
               <input type="text" id="geton">
@@ -183,13 +176,6 @@
 
             <label>目的地
               <input type="text" id="getoff">
-            </label>
-        </div>
-
-        <div class="input_area">
-          <h2>乗車する車両名・機種などを入力してください。</h2>
-            <label>使用車両・機材
-              <input type="text" id="vehicle">
             </label>
         </div>
 
