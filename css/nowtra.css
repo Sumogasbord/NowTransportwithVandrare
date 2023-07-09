@@ -70,10 +70,6 @@ a {
 
 .contents_area {
   height: auto;
-  width: 50%;
-  min-width: 750px;
-  margin: 2.5em auto;
-  padding: 2.5em;
 }
 
 .input_area {
@@ -100,8 +96,6 @@ a {
 .choice {
   color: #fcfcfc;
   background: #1f1f1f;
-  width: 200px;
-  height: 200px;
   display: inline-block;
   border-radius: 1em;
   box-shadow: 0 0 .75em rgba(252, 252, 252, .25);
@@ -122,4 +116,68 @@ a {
   background: #e53333;
   color: #fcfcfc;
   border: 1px solid rgba(172,38,38,.5);
+}
+
+@media screen and (min-width: 479px) {
+
+  h1{
+    color: #fcfcfc;
+    font-size: 2.5em;
+    text-shadow: 0 0 .25em black;
+    letter-spacing: .05em;
+  }
+  
+  h2{
+    font-size: 1.25em;
+    font-style: normal;
+  }
+  
+  p {
+    font-size: .75em;
+  }
+
+  .contents_area {
+    width: 50%;
+    min-width: 750px;
+    margin: 2.5em auto;
+    padding: 2.5em;
+  }
+
+  .choice {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  h1{
+    color: #fcfcfc;
+    font-size: 5em;
+    text-shadow: 0 0 .25em black;
+    letter-spacing: .05em;
+  }
+  
+  h2{
+    font-size: 1.25em;
+    font-style: normal;
+  }
+  
+  p {
+    font-size: .75em;
+  }
+
+  .contents_area {
+    width: 80%;
+    min-width: 750px;
+    margin: 1.5em auto;
+    padding: 1.5em;
+  }
+
+  .choice {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
 }
