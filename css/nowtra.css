@@ -125,7 +125,7 @@ a {
   display: inline-block;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
 
   h1{
     color: #fcfcfc;
@@ -150,14 +150,13 @@ a {
 
   input, select, textarea, button {
     font-family: 'azo-sans-web', 'zen-kaku-gothic-new', sans-serif;
-    font-size: 1.5em;
+    font-size: .75em;
     border: none;
     padding: .25em .5em;
   }
 
   input, select, textarea {
     color: #fcfcfc;
-    font-size: 1.5em;
     background: rgba(62, 62, 62, .5);
     border-bottom: .1em solid #fcfcfc;
     margin: .25em .5em;
