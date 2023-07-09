@@ -9,11 +9,6 @@ div {
   padding: 1em 1.5em;
 }
 
-label {
-  color: #fcfcfc;
-  font-size: .75em;
-}
-
 input, select, textarea, button {
   font-family: 'azo-sans-web', 'zen-kaku-gothic-new', sans-serif;
   font-size: 1.5em;
@@ -122,7 +117,7 @@ a {
 
   h1{
     color: #fcfcfc;
-    font-size: 2.5em;
+    font-size: 3.5em;
     text-shadow: 0 0 .25em black;
     letter-spacing: .05em;
   }
@@ -136,11 +131,16 @@ a {
     font-size: .75em;
   }
 
+  label {
+    color: #fcfcfc;
+    font-size: .75em;
+  }
+
   .contents_area {
-    width: 50%;
+    width: 60%;
     min-width: 750px;
-    margin: 2.5em auto;
-    padding: 2.5em;
+    margin: 1.5em auto;
+    padding: 1.5em;
   }
 
   .choice {
@@ -160,7 +160,7 @@ a {
   }
   
   h2{
-    font-size: 1.25em;
+    font-size: .85em;
     font-style: normal;
   }
   
@@ -168,16 +168,21 @@ a {
     font-size: .75em;
   }
 
+  label {
+    color: #fcfcfc;
+    font-size: .75em;
+  }
+
   .contents_area {
-    width: 80%;
+    width: 90%;
     min-width: 750px;
-    margin: 1.5em auto;
-    padding: 1.5em;
+    margin: 2.5em auto;
+    padding: 2.5em;
   }
 
   .choice {
-    width: 100%;
+    width: 200px;
     height: 200px;
-    display: block;
+    display: inline-block;
   }
 }
