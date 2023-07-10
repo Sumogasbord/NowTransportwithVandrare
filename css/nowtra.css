@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 897px) { 
  body {
     min-height: 100vh;
     font-family: 'azo-sans-web', 'zen-kaku-gothic-new', sans-serif;
@@ -127,7 +127,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 896px) {
   body {
     min-height: 100vh;
     font-family: 'azo-sans-web', 'zen-kaku-gothic-new', sans-serif;
